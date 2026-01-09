@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Summer Sunescape – Mallorca | Holidae</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Summer Sunescape to Mallorca: 7 nights all-inclusive, airport transfers, and seaside activities. From £499 pp.">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="logo">Holidae</a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <ul id="primary-nav" class="nav-list">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="package-sunescape.html" class="nav-link nav-link--active">Summer Sunescape</a></li>
+        <li><a href="about.html" class="nav-link">About Holidae</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="package-hero" aria-labelledby="package-title">
+      <div class="package-hero-text">
+        <p class="breadcrumbs">
+          <a href="index.html">Home</a> <span aria-hidden="true">/</span>
+          <a href="index.html#packages">Packages</a> <span aria-hidden="true">/</span>
+          <span>Summer Sunescape</span>
+        </p>
+
+        <h1 id="package-title">Summer Sunescape – Mallorca</h1>
+        <p class="package-subtitle">
+          7 nights, all-inclusive hotel, airport transfers, and seaside activities.
+        </p>
+
+        <div class="package-price-row">
+          <p class="package-price-big">From £499 pp</p>
+          <p class="package-price-note">Prices can change based on dates and availability.</p>
+        </div>
+
+        <div class="package-cta-row">
+          <a class="btn btn-primary" href="#enquiry">Check availability</a>
+          <a class="btn btn-secondary" href="#details">See what’s included</a>
+        </div>
+      </div>
+
+      <div class="package-hero-media">
+        <img src="images/cancun.jpg" alt="Sunny beach scene for the Mallorca holiday package">
+      </div>
+    </section>
+
+    <section id="details" class="package-details" aria-labelledby="details-title">
+      <h2 id="details-title">What’s included</h2>
+
+      <div class="details-grid">
+        <article class="detail-card">
+          <h3>Stay</h3>
+          <p>7 nights in a comfortable all-inclusive hotel close to the coast.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Food and drink</h3>
+          <p>Breakfast, lunch, dinner, and selected drinks included in your package.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Transfers</h3>
+          <p>Airport transfers included so you can arrive and relax straight away.</p>
+        </article>
+
+        <article class="detail-card">
+          <h3>Activities</h3>
+          <p>Seaside activities and free time to explore beaches, markets, and local spots.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="package-highlights" aria-labelledby="highlights-title">
+      <h2 id="highlights-title">Trip highlights</h2>
+      <ul class="highlights-list">
+        <li>All-inclusive comfort with easy planning</li>
+        <li>Short transfer times so you spend more time on holiday</li>
+        <li>Great for couples, friends, or first-time Mallorca visitors</li>
+        <li>Beach time plus optional add-ons, like boat trips or tours</li>
+      </ul>
+    </section>
+
+    <section class="package-info" aria-labelledby="info-title">
+      <h2 id="info-title">Good to know</h2>
+
+      <div class="info-grid">
+        <div class="info-block">
+          <h3>Best time to go</h3>
+          <p>Late spring to early autumn for warm days and clear water.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>What to pack</h3>
+          <p>Swimwear, sun cream, light layers for evenings, and comfortable shoes.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Family friendly</h3>
+          <p>Yes. Many all-inclusive hotels offer pools and kids’ activities.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Notes</h3>
+          <p>Flights are not listed here. Add flight options during enquiry or booking.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="enquiry" class="package-enquiry" aria-labelledby="enquiry-title">
+      <h2 id="enquiry-title">Check availability</h2>
+      <p>Send a quick enquiry and we’ll show options that match your dates.</p>
+
+      <form class="enquiry-form" action="#" method="post">
+        <div class="form-row">
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="form-row">
+          <label for="start">Preferred start date</label>
+          <input id="start" name="start" type="date" required>
+        </div>
+
+        <div class="form-row">
+          <label for="people">Number of people</label>
+          <input id="people" name="people" type="number" min="1" max="12" value="2" required>
+        </div>
+
+        <div class="form-row form-row--full">
+          <label for="notes">Notes</label>
+          <textarea id="notes" name="notes" rows="4" placeholder="Any preferences, room requests, or questions?"></textarea>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Send enquiry</button>
+        <p class="form-note">This demo form does not send emails yet.</p>
+      </form>
+    </section>
+
+    <section class="package-back">
+      <a class="btn btn-secondary" href="index.html#packages">Back to all packages</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> Holidae Holiday Booking</p>
+      <nav aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="index.html#packages">Packages</a>
+        <a href="#">Terms</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
