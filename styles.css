@@ -1,21 +1,31 @@
-/* RESET */
+/* =========================
+   RESET AND BASE STYLES
+   ========================= */
+
+/* Remove default browser spacing and use consistent box sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Global typography and line spacing */
 html {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
 }
 
+/* Base text and background colours */
 body {
   color: #111;
   background: #fff;
 }
 
-/* ACCESSIBILITY */
+/* =========================
+   ACCESSIBILITY HELPERS
+   ========================= */
+
+/* Screen reader only content, hidden visually but readable by assistive tech */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -27,12 +37,17 @@ body {
   border: 0;
 }
 
-/* HEADER + NAV */
+/* =========================
+   HEADER AND NAVIGATION
+   ========================= */
+
+/* Header container with subtle divider */
 .site-header {
   border-bottom: 1px solid #e5e5e5;
   background: #fff;
 }
 
+/* Main navigation layout and centring */
 .nav {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,6 +57,7 @@ body {
   justify-content: space-between;
 }
 
+/* Logo styling */
 .logo {
   font-size: 1.4rem;
   font-weight: bold;
@@ -49,21 +65,25 @@ body {
   color: #111;
 }
 
+/* Navigation list layout for desktop */
 .nav-list {
   list-style: none;
   display: flex;
   gap: 1rem;
 }
 
+/* Navigation links */
 .nav-link {
   text-decoration: none;
   color: #111;
 }
 
+/* Highlight active page link */
 .nav-link--active {
   font-weight: bold;
 }
 
+/* Mobile menu toggle button (hidden on desktop) */
 .nav-toggle {
   display: none;
   background: none;
@@ -71,7 +91,11 @@ body {
   font-size: 1.5rem;
 }
 
-/* HERO */
+/* =========================
+   HERO SECTION
+   ========================= */
+
+/* Hero layout container */
 .hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -80,27 +104,35 @@ body {
   gap: 2rem;
 }
 
+/* Main hero heading */
 .hero-text h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
 
+/* Hero description text */
 .hero-text p {
   margin-bottom: 1.5rem;
 }
 
+/* Call-to-action buttons layout */
 .hero-cta {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
 }
 
+/* Hero image styling */
 .hero-media img {
   width: 100%;
   border-radius: 12px;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTON STYLES
+   ========================= */
+
+/* Base button styling */
 .btn {
   display: inline-block;
   padding: 0.6rem 1rem;
@@ -110,52 +142,68 @@ body {
   cursor: pointer;
 }
 
+/* Primary action button */
 .btn-primary {
   background: #111;
   color: #fff;
 }
 
+/* Secondary action button */
 .btn-secondary {
   background: #f2f2f2;
   color: #111;
 }
 
+/* Smaller button variant */
 .btn-small {
   font-size: 0.85rem;
 }
 
-/* STATS */
+/* =========================
+   STATS SECTION
+   ========================= */
+
+/* Stats section background and alignment */
 .stats {
   background: #f7f7f7;
   padding: 2rem 1rem;
   text-align: center;
 }
 
+/* Intro paragraph spacing */
 .stats-intro {
   margin: 0.5rem 0 1.5rem;
 }
 
+/* Stats cards layout */
 .stats-grid {
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
 
+/* Large percentage numbers */
 .stat-number {
   font-size: 2rem;
   font-weight: bold;
 }
 
-/* THEMES */
+/* =========================
+   THEMES SECTION
+   ========================= */
+
+/* Themes section spacing */
 .themes {
   padding: 2rem 1rem;
 }
 
+/* Shared section header layout */
 .section-header {
   max-width: 1200px;
   margin: 0 auto 1rem;
 }
 
+/* Grid for theme cards */
 .themes-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -164,6 +212,7 @@ body {
   gap: 1rem;
 }
 
+/* Individual theme card */
 .theme-card {
   position: relative;
   border-radius: 12px;
@@ -171,6 +220,7 @@ body {
   text-decoration: none;
 }
 
+/* Theme image sizing */
 .theme-card img {
   width: 100%;
   height: 140px;
@@ -178,6 +228,7 @@ body {
   display: block;
 }
 
+/* Overlay label on theme images */
 .theme-label {
   position: absolute;
   left: 10px;
@@ -189,11 +240,16 @@ body {
   color: #111;
 }
 
-/* PACKAGES */
+/* =========================
+   PACKAGES SECTION
+   ========================= */
+
+/* Packages section spacing */
 .packages {
   padding: 2rem 1rem;
 }
 
+/* Grid layout for package cards */
 .packages-grid {
   max-width: 1200px;
   margin: 0 auto;
@@ -201,50 +257,65 @@ body {
   gap: 1.5rem;
 }
 
+/* Package card container */
 .package-card {
   border: 1px solid #e5e5e5;
   border-radius: 12px;
   overflow: hidden;
 }
 
+/* Package image styling */
 .package-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
 }
 
+/* Package content padding */
 .package-card-body {
   padding: 1rem;
 }
 
+/* Emphasised package price */
 .package-price {
   font-weight: bold;
   margin: 0.5rem 0;
 }
 
-/* MEDIA */
+/* =========================
+   MEDIA SECTION
+   ========================= */
+
+/* Video section alignment */
 .media {
   padding: 2rem 1rem;
   text-align: center;
 }
 
+/* Video container width */
 .media-wrapper {
   max-width: 800px;
   margin: 1rem auto 0;
 }
 
+/* Video styling */
 .media video {
   width: 100%;
   border-radius: 12px;
 }
 
-/* FOOTER */
+/* =========================
+   FOOTER
+   ========================= */
+
+/* Footer background and spacing */
 .site-footer {
   background: #111;
   color: #fff;
   margin-top: 2rem;
 }
 
+/* Footer content layout */
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -254,13 +325,18 @@ body {
   flex-wrap: wrap;
 }
 
+/* Footer links */
 .site-footer a {
   color: #fff;
   text-decoration: none;
   margin-left: 1rem;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE LAYOUTS
+   ========================= */
+
+/* Tablet and larger screens */
 @media (min-width: 700px) {
   .hero {
     grid-template-columns: 1fr 1fr;
@@ -276,18 +352,25 @@ body {
   }
 }
 
+/* Large desktop screens */
 @media (min-width: 1000px) {
   .themes-grid {
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
-/* PACKAGE PAGE */
+
+/* =========================
+   PACKAGE DETAIL PAGE
+   ========================= */
+
+/* Page width and spacing */
 .page {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
+/* Breadcrumb navigation */
 .breadcrumbs {
   font-size: 0.9rem;
   margin-bottom: 0.75rem;
@@ -298,33 +381,39 @@ body {
   text-decoration: none;
 }
 
+/* Package hero layout */
 .package-hero {
   display: grid;
   gap: 1.5rem;
   align-items: center;
 }
 
+/* Package hero image */
 .package-hero-media img {
   width: 100%;
   border-radius: 12px;
   display: block;
 }
 
+/* Subtitle spacing */
 .package-subtitle {
   margin: 0.75rem 0 1rem;
 }
 
+/* Large price display */
 .package-price-big {
   font-size: 1.6rem;
   font-weight: bold;
 }
 
+/* Price note text */
 .package-price-note {
   margin-top: 0.25rem;
   color: #333;
   font-size: 0.95rem;
 }
 
+/* Call-to-action row */
 .package-cta-row {
   margin-top: 1rem;
   display: flex;
@@ -332,6 +421,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Section spacing on package page */
 .package-details,
 .package-highlights,
 .package-info,
@@ -340,6 +430,7 @@ body {
   margin-top: 2rem;
 }
 
+/* Details and info grids */
 .details-grid,
 .info-grid {
   display: grid;
@@ -347,6 +438,7 @@ body {
   margin-top: 1rem;
 }
 
+/* Card-style blocks */
 .detail-card,
 .info-block {
   border: 1px solid #e5e5e5;
@@ -355,22 +447,26 @@ body {
   background: #fff;
 }
 
+/* Highlights list */
 .highlights-list {
   margin-top: 1rem;
   padding-left: 1.2rem;
 }
 
+/* Enquiry form layout */
 .enquiry-form {
   margin-top: 1rem;
   max-width: 700px;
 }
 
+/* Form row spacing */
 .form-row {
   display: grid;
   gap: 0.4rem;
   margin-bottom: 1rem;
 }
 
+/* Form input styles */
 .form-row input,
 .form-row textarea {
   width: 100%;
@@ -380,16 +476,19 @@ body {
   font-size: 1rem;
 }
 
+/* Full-width form rows */
 .form-row--full {
   grid-column: 1 / -1;
 }
 
+/* Small helper text */
 .form-note {
   margin-top: 0.75rem;
   font-size: 0.9rem;
   color: #333;
 }
 
+/* Desktop layout for package page */
 @media (min-width: 900px) {
   .package-hero {
     grid-template-columns: 1.1fr 0.9fr;
@@ -403,15 +502,23 @@ body {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* =========================
+   ABOUT PAGE HELPERS
+   ========================= */
+
+/* Lead paragraph spacing */
 .lead {
   margin-top: 0.75rem;
   max-width: 800px;
 }
 
+/* About page hero spacing */
 .about-hero {
   margin-bottom: 2rem;
 }
 
+/* About page section spacing */
 .about-grid,
 .about-values,
 .about-story,
@@ -419,9 +526,62 @@ body {
   margin-top: 2rem;
 }
 
+/* About page call-to-action row */
 .about-cta {
   margin-top: 1rem;
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+/* =========================
+   MOBILE NAVIGATION
+   ========================= */
+
+/* Mobile-only navigation behaviour */
+@media (max-width: 699px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  /* Hidden dropdown menu */
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 64px;
+    right: 1rem;
+    left: 1rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    padding: 0.75rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 1000;
+  }
+
+  /* Menu visible when toggled */
+  .nav-list.is-open {
+    display: flex;
+  }
+
+  /* Position context for dropdown */
+  .nav {
+    position: relative;
+  }
+}
+
+/* Desktop navigation reset */
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-list {
+    display: flex;
+    position: static;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
 }
